@@ -11,6 +11,7 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get -y update
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo systemctl enable docker
 sudo docker pull budgetzero/budgetzero:latest
 sudo docker run -d -p 8080:8080 --name budgetzero budgetzero/budgetzero
 sudo docker run -d -p 5984:5984 --name budgetzero-couchdb-sync -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password couchdb:latest
