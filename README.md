@@ -7,4 +7,6 @@ Then `cd setup-budgetzero` and
 
 Run with `sudo sh setup-budgetzero.sh`
 
+Or in one line with `git clone https://github.com/Anthras/setup-budgetzero.git && sudo sh setup-budgetzero/setup-budgetzero.sh`
+
 See https://github.com/budgetzero/budgetzero for the awesome work they do at budgetzero!
